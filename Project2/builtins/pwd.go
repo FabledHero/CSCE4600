@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func Pwd() {
+func Pwd() error {
 	// Get the current working directory
 	currentDir, err := os.Getwd()
 	if err != nil {
@@ -14,4 +14,5 @@ func Pwd() {
 		return
 	}
 	fmt.Println(currentDir)
+	return nil
 }
