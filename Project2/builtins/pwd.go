@@ -3,6 +3,7 @@ package builtins
 import (
 	"fmt"
 	"os"
+	"errors"
 )
 
 func Pwd() error {
