@@ -3,7 +3,6 @@ package builtins
 import (
 	"fmt"
 	"os"
-	"errors"
 )
 
 func Pwd() error {
@@ -12,7 +11,7 @@ func Pwd() error {
 	if err != nil {
 		//error catching
 		fmt.Println("Error:", err)
-		return
+		return nil
 	}
 	fmt.Println(currentDir)
 	return nil
