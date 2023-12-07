@@ -5,13 +5,14 @@ import (
 	"os"
 )
 
-func Pwd() {
+func Pwd() error {
 	// Get the current working directory
 	currentDir, err := os.Getwd()
 	if err != nil {
 		//error catching
 		fmt.Println("Error:", err)
-		return
+		return nil
 	}
 	fmt.Println(currentDir)
+	return nil
 }

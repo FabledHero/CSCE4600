@@ -3,7 +3,6 @@ package builtins
 import (
 	"fmt"
 	"strings"
-	"errors"
 )
 
 func Echo(args ...string) error {
@@ -11,3 +10,5 @@ func Echo(args ...string) error {
 	fmt.Println(message)
 	return nil
 }
+
+//Simple function takes args and prints them.
